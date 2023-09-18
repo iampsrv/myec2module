@@ -29,7 +29,7 @@ variable "name_sg" {
 }
 
 resource "aws_security_group" "mysg" {
-  name        = "mysgtf"
+  name        = var.name_sg
   description = "Created by terraform"
 #   vpc_id      = aws_vpc.vpctf.id
 
